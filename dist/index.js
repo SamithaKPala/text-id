@@ -27,7 +27,6 @@ var textId = /** @class */ (function () {
         }
     };
     textId.prototype.identifyCreditCardNumber = function (textList, isIos) {
-        console.log("textList ", textList);
         var combinedDigits = this.cleanDataForCardNumber(textList, isIos);
         for (var length_1 = 13; length_1 <= 19; length_1++) {
             var potentialCardNumber = combinedDigits.slice(0, length_1);

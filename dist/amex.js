@@ -5,6 +5,7 @@ var AmexService = /** @class */ (function () {
     function AmexService() {
     }
     AmexService.prototype.checkIsAmex = function (combinedDigitsOther) {
+        console.log("Checking amex");
         var amexPattern = /^3[47][0-9]{13}$/;
         var amFormat = combinedDigitsOther.slice(0, 15);
         return amexPattern.test(amFormat);
